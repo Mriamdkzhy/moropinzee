@@ -1,6 +1,7 @@
 #include "Vector.h"
 #include <sstream>
 #include <iterator>
+#include <stdexcept>
 
 Vector::Vector(){
     holder.push_back(std::vector<std::string>{"Rock","Paper"});
@@ -34,6 +35,14 @@ void Vector::callVector(){
 
 bool Vector::lose(Move* move,Move* move2){
     //checks if win or lose (tie is counted as a win)
+    // Check if either move is null and throw an error
+    if (move == nullptr) {
+        throw std::runtime_error("Error: Unable to get a valid move for player 1");
+    }
+    if (move2 == nullptr) {
+        throw std::runtime_error("Error: Unable to get a valid move for player 2");
+    }
+    
     for (auto it = holder.begin(); it != holder.end(); ++it) {
         if (move->getName() == (*it)[0]) {
             //std::cout << "Move found!:" << (*it)[0] << std::distance(holder.begin(), it) << std::endl;
