@@ -10,6 +10,16 @@ Pirate beats Ninja and Zombie
 Ninja beats Robot and Monkey
 Zombie beats Ninja and Robot 
 
+## Running Game:
+Make sure you have `g++` installed.
+
+
+Compile by:
+
+```
+g++ main.cpp Human.cpp Player.cpp Referee.cpp Vector.cpp Move.cpp Monkey.cpp Ninja.cpp Pirate.cpp Robot.cpp Zombie.cpp -o play
+```
+
 Run by:
 
 ```

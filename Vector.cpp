@@ -4,9 +4,6 @@
 #include <stdexcept>
 
 Vector::Vector(){
-    holder.push_back(std::vector<std::string>{"Rock","Paper"});
-    holder.push_back(std::vector<std::string>{"Paper","Scissors"});
-    holder.push_back(std::vector<std::string>{"Scissors","Rock"});
     holder.push_back(std::vector<std::string>{"Monkey","Pirate","Zombie"});
     holder.push_back(std::vector<std::string>{"Robot","Monkey","Pirate"});
     holder.push_back(std::vector<std::string>{"Pirate","Ninja","Zombie"});
