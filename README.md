@@ -16,7 +16,7 @@ Zombie beats Ninja and Robot
 
 ## Running Game:
 Make sure you have `g++` installed.
-
+Clone the repository using the web URL
 
 Compile by:
 
